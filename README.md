@@ -6,7 +6,7 @@ Only `.toml` files directly inside `templates/` are published to the app. The ca
 
 ## Add a template from a phone or browser
 
-1. Read [`docs/TEMPLATE_AUTHORING.md`](docs/TEMPLATE_AUTHORING.md), or give that entire document to ChatGPT together with [`docs/CHATGPT_PROMPT.md`](docs/CHATGPT_PROMPT.md).
+1. Use the standalone [`docs/CHATGPT_PROMPT.md`](docs/CHATGPT_PROMPT.md) to generate a template. It contains the complete schema and authoring contract. [`docs/TEMPLATE_AUTHORING.md`](docs/TEMPLATE_AUTHORING.md) is the shorter human-reference guide.
 2. In GitHub, open `templates/`, choose **Add file → Create new file**, and name it with lowercase kebab-case plus `.toml`, such as `post-fall-assessment.toml`.
 3. Paste the generated TOML and commit it to `main`.
 4. Open the repository's **Actions** tab and confirm that **Validate templates** is green. A bad commit is not applied by the app, but it should still be corrected promptly.
@@ -24,4 +24,3 @@ pnpm validate
 ## Safety and privacy
 
 This repository is public. Never add patient names, room numbers, dates of birth, medical record numbers, notes about a real encounter, credentials, secrets, or any other protected health information. Templates are general workflow aids—not medical advice or substitutes for current facility policy, product instructions, clinical judgment, or required training. A qualified clinician must review content before operational use.
-
