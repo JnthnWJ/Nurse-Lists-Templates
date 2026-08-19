@@ -1,0 +1,33 @@
+id = "specimen-collection-workflow"
+version = 1
+title = "Specimen Collection Workflow"
+category = "Specimen collection"
+kind = "checklist"
+description = "A generic workflow example for collecting and sending an ordered specimen."
+synonyms = ["lab specimen", "sample collection"]
+
+[[sections]]
+id = "prepare"
+title = "Prepare"
+
+[[sections.blocks]]
+id = "verify-order-and-requirements"
+kind = "task"
+title = "Verify the order and collection requirements"
+body = "Confirm the requested specimen, collection method, timing, and current facility requirements."
+
+[[sections.blocks]]
+id = "gather-supplies"
+kind = "task"
+title = "Gather collection and transport supplies"
+
+[[sections]]
+id = "complete"
+title = "Complete"
+
+[[sections.blocks]]
+id = "label-and-send"
+kind = "task"
+title = "Label and send the specimen"
+body = "Use required identifiers and transport the specimen according to current facility policy."
+

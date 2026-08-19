@@ -1,0 +1,30 @@
+id = "handoff-reference"
+version = 1
+title = "Handoff Reference"
+category = "Communication"
+kind = "reference"
+description = "A generic reference example for organizing a concise clinical handoff."
+synonyms = ["report", "shift handoff"]
+
+[[sections]]
+id = "structure"
+title = "Suggested structure"
+
+[[sections.blocks]]
+id = "lead-with-current-situation"
+kind = "instruction"
+title = "Lead with the current situation"
+body = "State the immediate reason for handoff and any time-sensitive concern."
+
+[[sections.blocks]]
+id = "escalate-urgent-change"
+kind = "warning"
+title = "Escalate urgent changes"
+body = "Do not defer an urgent clinical escalation to routine handoff. Follow current escalation policy."
+
+[[sections.blocks]]
+id = "document-as-required"
+kind = "documentation"
+title = "Document as required"
+body = "Complete handoff documentation according to current facility policy."
+

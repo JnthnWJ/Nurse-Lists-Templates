@@ -1,0 +1,39 @@
+id = "mobility-assistance"
+version = 1
+title = "Mobility Assistance"
+category = "Mobility"
+kind = "hybrid"
+description = "A generic reference and checklist example for preparing to assist mobility."
+synonyms = ["ambulation", "transfer assistance"]
+
+[[sections]]
+id = "assess"
+title = "Assess"
+
+[[sections.blocks]]
+id = "review-current-mobility-plan"
+kind = "task"
+title = "Review the current mobility plan"
+body = "Confirm ordered activity, assistance level, restrictions, and required equipment."
+
+[[sections.blocks]]
+id = "stop-for-concerning-change"
+kind = "warning"
+title = "Stop for a concerning change"
+body = "Pause and follow current clinical escalation policy if the patient's condition has changed."
+
+[[sections]]
+id = "prepare"
+title = "Prepare"
+
+[[sections.blocks]]
+id = "prepare-environment"
+kind = "task"
+title = "Prepare the environment and equipment"
+
+[[sections.blocks]]
+id = "explain-plan"
+kind = "tip"
+title = "Explain the plan before moving"
+body = "Clear, stepwise cues help the patient and assisting staff coordinate safely."
+
