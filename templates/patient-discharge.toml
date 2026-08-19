@@ -1,0 +1,101 @@
+id = "patient-discharge"
+version = 1
+title = "Patient Discharge"
+category = "Nursing Workflow"
+kind = "checklist"
+description = "A bedside nursing checklist for completing common patient discharge tasks."
+synonyms = ["discharge", "patient discharge", "discharge checklist", "avs"]
+
+[[sections]]
+id = "before-discharge"
+title = "Before Discharge"
+
+[[sections.blocks]]
+id = "verify-discharge-disposition"
+kind = "task"
+title = "Verify discharge destination/disposition"
+
+[[sections.blocks]]
+id = "confirm-medication-reconciliation"
+kind = "task"
+title = "Make sure discharge medication reconciliation is complete"
+
+[[sections.blocks]]
+id = "confirm-discharge-resources"
+kind = "task"
+title = "Make sure required discharge resources are arranged"
+body = "Confirm home health, DME, wound supplies, oxygen, or other discharge needs if applicable."
+
+[[sections.blocks]]
+id = "complete-patient-education"
+kind = "task"
+title = "Resolve/complete patient education"
+
+[[sections]]
+id = "review-with-patient"
+title = "Review With Patient"
+
+[[sections.blocks]]
+id = "print-discharge-paperwork"
+kind = "task"
+title = "Print discharge paperwork"
+
+[[sections]]
+id = "prepare-patient-to-leave"
+title = "Get Patient Ready to Leave"
+
+[[sections.blocks]]
+id = "remove-discontinued-ldas"
+kind = "task"
+title = "Remove LDAs that are not supposed to remain"
+body = "Examples include PIVs, Foley catheters, and other temporary lines or drains as ordered."
+
+[[sections.blocks]]
+id = "remove-telemetry"
+kind = "task"
+title = "Return/remove telemetry if applicable"
+
+[[sections.blocks]]
+id = "confirm-belongings"
+kind = "task"
+title = "Make sure patient has all belongings"
+
+[[sections.blocks]]
+id = "confirm-discharge-items"
+kind = "task"
+title = "Make sure patient has needed medications, supplies, equipment, and paperwork"
+
+[[sections.blocks]]
+id = "confirm-clothing-and-mobility"
+kind = "task"
+title = "Confirm appropriate clothing/shoes and safe mobility for discharge"
+
+[[sections.blocks]]
+id = "confirm-transportation"
+kind = "task"
+title = "Confirm transportation"
+
+[[sections]]
+id = "paperwork-and-charting"
+title = "Paperwork / Charting"
+
+[[sections.blocks]]
+id = "document-lda-removal"
+kind = "task"
+title = "Chart LDA removal"
+
+[[sections.blocks]]
+id = "write-discharge-note"
+kind = "task"
+title = "Write discharge nursing note"
+body = "Consider documenting discharge destination, AVS/instructions and medication instructions reviewed, patient/caregiver understanding, LDA status, belongings, how and with whom the patient left, and condition at discharge."
+
+[[sections.blocks]]
+id = "complete-discharge-documentation"
+kind = "task"
+title = "Complete required discharge documentation/navigator"
+
+[[sections.blocks]]
+id = "file-signed-discharge-acknowledgment"
+kind = "task"
+title = "File the signed discharge acknowledgment"
