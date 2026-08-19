@@ -10,7 +10,14 @@ const compareRef = compareIndex >= 0 ? process.argv[compareIndex + 1] : undefine
 
 try {
   const current = await loadWorkingTreeTemplates()
-  validateUniqueTemplateIds(current, 'current tree')
+  validateUniqueTemplateIds(
+    current.filter((item) => item.filename.startsWith('templates/')),
+    'live catalog',
+  )
+  validateUniqueTemplateIds(
+    current.filter((item) => item.filename.startsWith('examples/')),
+    'examples',
+  )
   if (compareRef) {
     const previous = loadTemplatesAtRef(compareRef)
     validateVersionHistory(previous, current)
